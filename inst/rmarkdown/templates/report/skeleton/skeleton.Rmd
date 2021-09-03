@@ -47,7 +47,8 @@ Using non-technical verbiage, provide a brief discussion that connects the study
 
 Include here any citations and reference that can help the PI write his/her manuscript. An example of APA style citation from Google Scholar is
 
-   James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). *An introduction to statistical learning* (Vol. 112, p. 18). New York: Springer.
+1.  James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). *An introduction to statistical learning* (Vol. 112, p. 18). New York: Springer.
+1.  Crawley, M. J. (2012). *The R book*. John Wiley & Sons.
 
 
 # Appendix A -- Figures and tables
