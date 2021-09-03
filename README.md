@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of BiosCoreHub is to ...
+The goal of BiosCoreHub is to assist NC TraCS Bios Core analysts by providing basic reporting tools for the most common statistical analysis requests.
 
 ## Installation
 
