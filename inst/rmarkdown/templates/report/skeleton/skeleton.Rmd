@@ -1,0 +1,74 @@
+---
+title: |
+  ![](tracs_logo.png)
+  \
+  \
+  Statistical Analysis Report
+subtitle: TraCS Request #xxxxx
+author: Author 1 and Author 2
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output:
+  bookdown::word_document2:
+    reference_docx: "template.docx"
+    number_sections: false
+  bookdown::pdf_document2:
+    number_sections: false
+  bookdown::html_document2:
+    number_sections: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      fig.align = "center")
+
+# Load the packages you need
+library(tidyverse)
+library(flextable)
+```
+
+# Introduction
+
+Please summarize the study design and state the study questions (aims) to be answered with the analysis.
+
+# Statistical Methods
+
+Describe the statistical methods as they would appear on a related manuscript. List all analysis and variables used, avoiding vague statements like "we examed the association between the outcome and exposures using chi-squared test." Give enough details so that someone reading this report in the future can reproduce your work (without needing the source code).
+
+# Results
+
+State the results following a logical order (either by aim or by the same order presented in the methods). Do not include "additional" analysis not mentioned in the statistical methods section. Make sure you include cross-references to the appropriate figures and tables using the syntax "\\\@ref(fig:\<*chunk-name*\>)" for images and "\\\@ref(tab:\<*chunk-name*\>)" for tables, *e.g.*, "this is a cross-reference to Figure \@ref(fig:myfig1) and Table \@ref(tab:mytab1)."
+
+# Discussion and conclusion
+
+Using non-technical verbiage, provide a brief discussion that connects the study questions with the results you reported. Restating the study questions following with the most relevant results is probably a good approach here.
+
+# Bibliography
+
+Include here any citations and reference that can help the PI write his/her manuscript. An example of APA style citation from Google Scholar is
+
+   James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). *An introduction to statistical learning* (Vol. 112, p. 18). New York: Springer.
+
+
+# Appendix A -- Figures and tables
+
+Ensure to use cross-references and label the figures/tables properly, *i.e.*, with enough details that provide standalone information about what is presented. Avoid saying "Table X: regression coefficients."; instead, describe the model and its objective in more detail, *e.g.*, "Table X: estimated relative risk from the Poisson regression modeling the risk of infection while controlling for age, gender, and income."
+
+## Examples
+
+Inserting/cross-referencing plots
+
+```{r myfig1, fig.height=5, fig.width=7, fig.cap='this is an informative caption.'}
+ggplot(mtcars, aes(mpg, wt, shape = factor(cyl))) +
+  geom_point(aes(colour = factor(cyl)), size = 4) +
+  geom_point(colour = "grey90", size = 1.5) +
+  theme_bw() +
+  theme(legend.position = "bottom")
+```
+
+Inserting/cross-referencing tables
+
+```{r mytab1}
+flextable(head(mtcars)) %>% 
+  autofit() %>% 
+  set_caption('this is another useful caption.')
+```
