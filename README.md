@@ -1,6 +1,6 @@
 # BiosCoreHub
 
-[![Version](https://badge.fury.io/gh/tterb%252FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#experimental)
 
 The goal of BiosCoreHub is to assist NC TraCS Bios Core analysts by providing basic reporting tools for the most common statistical analysis requests.
 
