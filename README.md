@@ -1,8 +1,7 @@
 
 # BiosCoreHub
 
-<!-- badges: start -->
-<!-- badges: end -->
+[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
 
 The goal of BiosCoreHub is to assist NC TraCS Bios Core analysts by providing basic reporting tools for the most common statistical analysis requests.
 
