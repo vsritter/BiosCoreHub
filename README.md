@@ -6,11 +6,27 @@ The goal of BiosCoreHub is to assist NC TraCS Bios Core analysts by providing ba
 
 ## Installation
 
-You can install the released version of BiosCoreHub from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of BiosCoreHub from GitHub with:
 
 ``` r
-install.packages("BiosCoreHub")
+install.packages("devtools")
+library(devtools)
+
+install_github("vsritter/BiosCoreHub")
 ```
+
+## Usage
+
+Once installed, load the package with:
+
+``` r
+library("BiosCoreHub")
+```
+
+and the "TraCS report" template should be available.
+
+You can create a new report in Rstudio doing *File > New File > R Markdown > From template > TraCS report \{BiosCoreHub\}*.
+
 
 ## Example
 
