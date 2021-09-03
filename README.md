@@ -1,7 +1,6 @@
-
 # BiosCoreHub
 
-[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
+[![Version](https://badge.fury.io/gh/tterb%252FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
 
 The goal of BiosCoreHub is to assist NC TraCS Bios Core analysts by providing basic reporting tools for the most common statistical analysis requests.
 
@@ -15,10 +14,19 @@ install.packages("BiosCoreHub")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+HTML report template
 
-``` r
-library(BiosCoreHub)
-## basic example code
-```
+<img src="inst/screenshots/report_html.png" width="700" style="border: 1px solid black"/>
+
+<br>
+
+PDF report template
+
+<img src="inst/screenshots/report_pdf.png" width="700" style="border: 1px solid black"/>
+
+<br>
+
+Docx report template
+
+<img src="inst/screenshots/report_docx.png" width="700" style="border: 1px solid black"/>
 
