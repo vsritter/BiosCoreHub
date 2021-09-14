@@ -20,3 +20,7 @@ Depends:
     tidyverse
 URL: https://github.com/vsritter/BiosCoreHub
 BugReports: https://github.com/vsritter/BiosCoreHub/issues
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
