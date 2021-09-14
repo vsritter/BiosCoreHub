@@ -60,7 +60,7 @@ source('./R/analysis.R')
 ## Table 1 and Results
 
 -   Package **gtsummary** has great capabilities
--   Remember to label your variables for nice outputs
+-   Remember to label your variables for nice outputs (*e.g.* **labelled** package)
 
 ![](images/tbl_summary_demo1.gif){width="800"}
 
@@ -155,4 +155,3 @@ table1 %>%
 # JAMA theme
 theme_gtsummary_journal(journal = "jama")
 ```
-

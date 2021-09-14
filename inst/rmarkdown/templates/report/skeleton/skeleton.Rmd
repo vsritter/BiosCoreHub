@@ -4,17 +4,17 @@ title: |
   \
   \
   Statistical Analysis Report
-subtitle: TraCS Request #xxxxx
+subtitle: TraCS Request \#xxxxx
 author: Author 1 and Author 2
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output:
-  bookdown::word_document2:
-    reference_docx: "template.docx"
-    number_sections: false
   bookdown::pdf_document2:
     number_sections: false
     toc: false
   bookdown::html_document2:
+    number_sections: false
+  bookdown::word_document2:
+    reference_docx: "template.docx"
     number_sections: false
 ---
 
@@ -24,7 +24,9 @@ knitr::opts_chunk$set(echo = FALSE,
 
 # Load the packages you need
 library(tidyverse)
+library(gtsummary)
 library(flextable)
+set_flextable_defaults(fonts_ignore = TRUE)
 ```
 
 # Introduction
